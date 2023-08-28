@@ -8,6 +8,7 @@
 
 #define _POSIX_C_SOURCE 200819L
 #define _XOPEN_SOURCE   700
+#define _DEFAULT_SOURCE
 
 #include <stdio.h>
 #include <stdlib.h>
