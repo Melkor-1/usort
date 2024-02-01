@@ -1,4 +1,7 @@
 # usort - Text File Sorting Utility
+
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://https://github.com/Melkor-1/usort/edit/main/LICENSE)
+
 usort is a command-line utility written in C that allows you to sort the lines of a text file in various ways. It provides options for sorting numerically, in reverse order, and even ignoring case when performing lexicographical sorting. Additionally, you can specify an output file to save the sorted content.
 
 ## Features
@@ -57,7 +60,3 @@ To build the usort executable, clone the git repository and run:
 ~~~
 make
 ~~~
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
