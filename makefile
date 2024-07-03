@@ -17,24 +17,11 @@ CFLAGS 	+= -s
 CFLAGS 	+= -O2
 CFLAGS 	+= -D_FORTIFY_SOURCE=2
 
-BINDIR 	:= bin
-BIN 	:= $(BINDIR)/usort
-SRCS 	:= $(wildcard src/*.c)
-OBJS	:= $(patsubst src/%.c, obj/%.o, $(SRCS))
-
-all: $(BIN)
-
-$(BIN): $(OBJS)
-	$(CC) $(CFLAGS) -o $@ $^ 
-
-obj/%.o: src/%.c
-	$(CC) $(CFLAGS) -c $< -o $@ 
+TARGET	= usort
+all: $(TARGET)
 
 clean:
-	$(RM) -rf $(OBJS) 
+	$(RM) $(TARGET) 
 
-fclean:
-	$(RM) -rf $(BIN)
-
-.PHONY: clean all fclean
+.PHONY: all clean 
 .DELETE_ON_ERROR:
